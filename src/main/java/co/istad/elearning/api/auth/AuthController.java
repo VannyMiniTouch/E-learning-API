@@ -1,5 +1,6 @@
 package co.istad.elearning.api.auth;
 
+import co.istad.elearning.api.auth.dtos.AuthDto;
 import co.istad.elearning.api.auth.dtos.LoginDto;
 import jakarta.mail.MessagingException;
 import jakarta.validation.Valid;
@@ -21,23 +22,12 @@ import java.util.Map;
 public class AuthController {
 
     private final AuthService authService;
-    private final JwtEncoder jwtEncoder;
+//    private final JwtEncoder jwtEncoder;
 
     @PostMapping("/login")
-    Map<String, Object> login(@Valid @RequestBody LoginDto loginDto) {
-        Instant now = Instant.now();
-        JwtClaimsSet jwtClaimsSet = JwtClaimsSet.builder()
-                .id(loginDto.email())
-                .audience(List.of("Mobile", "Web"))
-                .issuedAt(now)
-                .expiresAt(now.plus(30, ChronoUnit.MINUTES))
-                .subject("Access Token")
-                .build();
-
-        String jwtToken = jwtEncoder.encode(JwtEncoderParameters.from(jwtClaimsSet)).getTokenValue();
-        return Map.of("token", jwtToken);
+    AuthDto login(@RequestBody LoginDto loginDto){
+      return   authService.login(loginDto);
     }
-
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping("/register")
