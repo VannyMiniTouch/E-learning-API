@@ -1,6 +1,8 @@
 package co.istad.elearning.api.category;
 
 
+import co.istad.elearning.api.category.dto.CategoryRequestDto;
+import co.istad.elearning.api.category.dto.CategoryResponseDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.NullValuePropertyMappingStrategy;

@@ -1,6 +1,9 @@
 package co.istad.elearning.api.instructor;
 
 import co.istad.elearning.api.category.CategoryRepository;
+import co.istad.elearning.api.instructor.dto.InstructorCreationDto;
+import co.istad.elearning.api.instructor.dto.InstructorDto;
+import co.istad.elearning.api.instructor.dto.InstructorEditionDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;

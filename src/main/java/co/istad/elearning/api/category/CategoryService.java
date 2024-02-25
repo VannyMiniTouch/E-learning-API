@@ -1,5 +1,8 @@
 package co.istad.elearning.api.category;
 
+import co.istad.elearning.api.category.dto.CategoryRequestDto;
+import co.istad.elearning.api.category.dto.CategoryResponseDto;
+
 import java.util.List;
 
 public interface CategoryService {

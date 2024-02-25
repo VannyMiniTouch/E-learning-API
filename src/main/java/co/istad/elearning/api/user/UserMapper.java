@@ -1,6 +1,7 @@
 package co.istad.elearning.api.user;
 
-import co.istad.elearning.api.auth.RegisterDto;
+import co.istad.elearning.api.auth.dtos.RegisterDto;
+import co.istad.elearning.api.user.dto.UserCreateDto;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

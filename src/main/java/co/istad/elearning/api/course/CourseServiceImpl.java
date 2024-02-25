@@ -2,6 +2,9 @@ package co.istad.elearning.api.course;
 
 import co.istad.elearning.api.category.Category;
 import co.istad.elearning.api.category.CategoryRepository;
+import co.istad.elearning.api.course.dto.CourseReqUpdateDto;
+import co.istad.elearning.api.course.dto.CourseRequestDto;
+import co.istad.elearning.api.course.dto.CourseResponseDto;
 import co.istad.elearning.api.instructor.Instructor;
 import co.istad.elearning.api.instructor.InstructorRepository;
 import lombok.RequiredArgsConstructor;
@@ -11,7 +14,6 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
-import java.util.Objects;
 
 @Service
 @RequiredArgsConstructor

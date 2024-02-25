@@ -1,5 +1,8 @@
 package co.istad.elearning.api.instructor;
 
+import co.istad.elearning.api.instructor.dto.InstructorCreationDto;
+import co.istad.elearning.api.instructor.dto.InstructorDto;
+import co.istad.elearning.api.instructor.dto.InstructorEditionDto;
 import org.mapstruct.BeanMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;

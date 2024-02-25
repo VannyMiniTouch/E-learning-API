@@ -1,6 +1,9 @@
 package co.istad.elearning.api.course;
 
 
+import co.istad.elearning.api.course.dto.CourseReqUpdateDto;
+import co.istad.elearning.api.course.dto.CourseRequestDto;
+import co.istad.elearning.api.course.dto.CourseResponseDto;
 import org.mapstruct.*;
 
 import java.util.List;

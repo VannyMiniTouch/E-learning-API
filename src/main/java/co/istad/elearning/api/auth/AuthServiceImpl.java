@@ -13,8 +13,10 @@ package co.istad.elearning.api.auth;
 
 import co.istad.elearning.api.auth.dtos.AuthDto;
 import co.istad.elearning.api.auth.dtos.LoginDto;
+import co.istad.elearning.api.auth.dtos.RegisterDto;
+import co.istad.elearning.api.auth.dtos.VerifyDto;
 import co.istad.elearning.api.user.User;
-import co.istad.elearning.api.user.UserCreateDto;
+import co.istad.elearning.api.user.dto.UserCreateDto;
 import co.istad.elearning.api.user.UserMapper;
 import co.istad.elearning.api.user.UserService;
 import co.istad.elearning.api.utility.RandomUtil;

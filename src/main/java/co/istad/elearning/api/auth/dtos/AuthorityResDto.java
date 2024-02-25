@@ -1,4 +1,4 @@
-package co.istad.elearning.api.auth;
+package co.istad.elearning.api.auth.dtos;
 
 import lombok.Builder;
 

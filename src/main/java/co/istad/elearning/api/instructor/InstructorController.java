@@ -1,5 +1,8 @@
 package co.istad.elearning.api.instructor;
 
+import co.istad.elearning.api.instructor.dto.InstructorCreationDto;
+import co.istad.elearning.api.instructor.dto.InstructorDto;
+import co.istad.elearning.api.instructor.dto.InstructorEditionDto;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -16,8 +19,8 @@ public class InstructorController {
 
     @GetMapping("/search")
     List<InstructorDto> search(@RequestParam(required = false, defaultValue = "") String familyName,
-                                   @RequestParam(required = false, defaultValue = "") String givenName,
-                                   @RequestParam(required = false, defaultValue = "") String biography) {
+                               @RequestParam(required = false, defaultValue = "") String givenName,
+                               @RequestParam(required = false, defaultValue = "") String biography) {
         return instructorService.search(familyName, givenName, biography);
     }
 

@@ -2,18 +2,14 @@ package co.istad.elearning.api.auth;
 
 import co.istad.elearning.api.auth.dtos.AuthDto;
 import co.istad.elearning.api.auth.dtos.LoginDto;
+import co.istad.elearning.api.auth.dtos.RegisterDto;
+import co.istad.elearning.api.auth.dtos.VerifyDto;
 import jakarta.mail.MessagingException;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
-import org.springframework.security.oauth2.jwt.JwtClaimsSet;
-import org.springframework.security.oauth2.jwt.JwtEncoder;
-import org.springframework.security.oauth2.jwt.JwtEncoderParameters;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.Instant;
-import java.time.temporal.ChronoUnit;
-import java.util.List;
 import java.util.Map;
 
 @RestController

@@ -1,4 +1,4 @@
-package co.istad.elearning.api.instructor;
+package co.istad.elearning.api.instructor.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Builder;

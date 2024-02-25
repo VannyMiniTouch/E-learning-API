@@ -1,14 +1,15 @@
-package co.istad.elearning.api.user;
+package co.istad.elearning.api.auth.dtos;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Builder;
 
+
 import java.util.Set;
 
 @Builder
-public record UserCreateDto(
+public record RegisterDto(
         @NotBlank
         String username,
         @NotBlank
@@ -16,6 +17,8 @@ public record UserCreateDto(
         String email,
         @NotBlank
         String password,
+        @NotBlank
+        String confirmPassword,
         @NotEmpty
         Set<@NotBlank String> roleNames
 ) {

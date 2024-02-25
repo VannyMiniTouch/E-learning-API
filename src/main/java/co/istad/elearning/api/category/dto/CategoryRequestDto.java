@@ -1,4 +1,4 @@
-package co.istad.elearning.api.category;
+package co.istad.elearning.api.category.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;

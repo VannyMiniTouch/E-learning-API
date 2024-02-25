@@ -1,5 +1,9 @@
 package co.istad.elearning.api.instructor;
 
+import co.istad.elearning.api.instructor.dto.InstructorCreationDto;
+import co.istad.elearning.api.instructor.dto.InstructorDto;
+import co.istad.elearning.api.instructor.dto.InstructorEditionDto;
+
 import java.util.List;
 
 public interface InstructorService {

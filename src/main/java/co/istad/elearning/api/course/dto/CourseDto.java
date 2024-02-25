@@ -1,7 +1,7 @@
-package co.istad.elearning.api.course;
+package co.istad.elearning.api.course.dto;
 
-import co.istad.elearning.api.category.CategoryDto;
-import co.istad.elearning.api.instructor.InstructorDto;
+import co.istad.elearning.api.category.dto.CategoryDto;
+import co.istad.elearning.api.instructor.dto.InstructorDto;
 import lombok.Builder;
 
 @Builder

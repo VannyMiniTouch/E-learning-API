@@ -1,5 +1,6 @@
 package co.istad.elearning.api.role;
 
+import co.istad.elearning.api.role.dto.RoleResDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.NullValuePropertyMappingStrategy;
