@@ -17,4 +17,9 @@ public class PersonServiceImpl implements PersonService{
         List<PersonDto> personDtos = personMapper.toPersonDto(person);
         return  personDtos;
     }
+
+    @Override
+    public List<Person> SpecificatoinPS() {
+        return  null;
+    }
 }

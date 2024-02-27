@@ -70,6 +70,7 @@ public class SecurityConfig {
         httpSecurity
                 .authorizeHttpRequests(request -> request
                         .requestMatchers("/file/**").permitAll()
+                        .requestMatchers("/api/v1/persons/**").permitAll()
                         .requestMatchers("/api/v1/auth/**").permitAll()
                         .anyRequest()
                         .authenticated())

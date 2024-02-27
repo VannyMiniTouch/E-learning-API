@@ -4,4 +4,5 @@ import java.util.List;
 
 public interface PersonService {
     List<PersonDto> listDistinPerson(String countryCode);
+    List<Person> SpecificatoinPS();
 }
